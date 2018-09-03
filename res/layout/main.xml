@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+	<TableLayout android:id="@+id/stats"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    	android:stretchColumns="0,1,2">
+	
+	    <TableRow>
+	        <TextView android:id="@+id/distance"
+				android:text="Distance"
+				android:padding="3dip"
+				android:textStyle="bold"
+				/>
+	        <TextView android:id="@+id/distanceM"
+				android:text="0.00 miles"
+	            android:padding="3dip" />
+	        <TextView android:id="@+id/distanceKM"
+				android:text="0.00 km"
+	            android:padding="3dip" />
+	    </TableRow>
+	    	
+	    <View
+    	    android:layout_height="2dip"
+        	android:background="#FF909090" />
+
+	    <TableRow>
+	        <TextView android:id="@+id/speed"
+				android:text="Speed"
+				android:padding="3dip"
+				/>
+	        <TextView android:id="@+id/speedM"
+	            android:padding="3dip" />
+	        <TextView android:id="@+id/speedKM"
+	            android:padding="3dip" />
+	    </TableRow>
+	    	
+	    <TableRow>
+	        <TextView
+				android:text="Time"
+				android:padding="3dip"
+				/>
+	        <TextView android:id="@+id/time"
+	            android:padding="3dip" 
+				android:layout_span="2"
+	            />
+	    </TableRow>
+	    	
+	    <TableRow>
+	        <TextView android:id="@+id/averageSpeed"
+				android:text="Average Speed"
+				android:padding="3dip"
+				/>
+	        <TextView android:id="@+id/averageSpeedM"
+	            android:padding="3dip" />
+	        <TextView android:id="@+id/averageSpeedKM"
+	            android:padding="3dip" />
+	    </TableRow>
+	    	
+	    <TableRow>
+	        <TextView android:id="@+id/distanceToStart"
+				android:text="Distance to Start"
+				android:padding="3dip"
+				/>
+	        <TextView android:id="@+id/distanceToStartM"
+	            android:padding="3dip" />
+	        <TextView android:id="@+id/distanceToStartKM"
+	            android:padding="3dip" />
+	    </TableRow>
+	    	
+	    <TableRow>
+	        <TextView android:id="@+id/altitudeLabel"
+				android:text="Altitude"
+				android:padding="3dip"
+				/>
+	        <TextView android:id="@+id/altitudeFT"
+				android:text="N/A"
+	            android:padding="3dip" 
+	            />
+	        <TextView android:id="@+id/altitudeM"
+				android:text="N/A"
+	            android:padding="3dip" 
+	            />
+	    </TableRow>
+	    	
+	</TableLayout>
+	
+    <Button android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_below="@id/stats"
+        android:text="Start"
+    	/>
+    	
+    <Button android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_below="@id/stats"
+    	android:layout_alignParentRight="true"
+        android:text="Stop"
+    	/>
+    	
+	<ListView android:id="@+id/runs"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    	android:layout_below="@id/start"
+    	/>
+		
+</RelativeLayout>
+	
